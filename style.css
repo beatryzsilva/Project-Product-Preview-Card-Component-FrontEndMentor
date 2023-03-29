@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2ebe3;
+    font-size: 14px;
+}
+
+.container{
+    /* outline: 1px solid red; */
+    width: 400px;
+    height: 640px;
+    padding-bottom: 30px;
+    background-color: white;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 25px;
+}
+
+.image{
+    background-image: url(/images/image-product-mobile.jpg);
+    background-position: center;
+    background-size: contain;
+    height: 280px;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.content{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 35px;
+    color: hsl(228, 12%, 48%);
+}
+
+.content > .title1{
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.content > h1{
+    color: hsl(212, 21%, 14%);    
+    margin-bottom: 20px;
+    font-family: 'Fraunces', serif;
+}
+
+.content > p{
+    margin-bottom: 20px;
+}
+
+.price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 27px;
+}
+
+.oldprice{
+    display: inline;
+    margin-left: 10px;
+}
+
+button{
+    color: white;
+    border: none;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    height: 50px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(228, 12%, 48%);
+}
+
+button > span{
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+@media (min-width: 594px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        padding: 0;
+        width: 600px;
+        height: 495px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+
+    .image{
+        background-image: url(/images/image-product-desktop.jpg);
+        background-size: 115%;
+        background-position: cover;
+        width: 50%;
+        height: 100%;
+        border-radius: 25px 0 0 25px;
+    }
+
+    .content{
+        width: 50%;
+    }
+
+    .content > p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    button{
+        margin-top: 40px;
+    }
+}
