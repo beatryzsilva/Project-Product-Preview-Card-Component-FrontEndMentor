@@ -23,7 +23,7 @@ body{
 }
 
 .image{
-    background-image: url(/images/image-product-mobile.jpg);
+    background-image: url(./images/image-product-mobile.jpg);
     background-position: center;
     background-size: contain;
     height: 280px;
@@ -107,7 +107,7 @@ button > span{
     }
 
     .image{
-        background-image: url(/images/image-product-desktop.jpg);
+        background-image: url(./images/image-product-desktop.jpg);
         background-size: 115%;
         background-position: cover;
         width: 50%;
